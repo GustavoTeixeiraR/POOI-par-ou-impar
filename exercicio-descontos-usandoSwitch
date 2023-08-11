@@ -1,0 +1,72 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	   /* int diaDaSemana = 5;*/
+	    
+	   /* if(diaDaSemana == 1){
+	        system.out.println("Domingo")
+	    }else if(diaDaSemana == 2){
+	        system.out.println("Segunda")
+	    }*/
+	    
+	    /*switch(diaDaSemana+2){
+	        case 1:
+	            System.out.println("Domingo");
+	            break;
+	        case 2:
+	            System.out.println("Segunda");
+	            break;
+	        case 3:
+	            System.out.println("Terça");
+	            break;
+	        case 4:
+	            System.out.println("Quarta");
+	            break;
+	        case 5:
+	            System.out.println("Quinta");
+	            break;
+	        default:
+	            System.out.println("Invalido");
+	            break;
+	    }  */
+	    Scanner scan = new Scanner(System.in);
+	    
+	    float valor;
+	    int desconto;
+	    
+	    
+	    System.out.println("Digite o valor do produto: ");
+	    valor = scan.nextInt();
+	    
+	    System.out.println("Digite o tipo do desconto (1,2 ou 3):");
+	    desconto = scan.nextInt();
+	    
+	    switch (desconto){
+	        case 1: 
+	            if (valor>30){
+	                valor = valor*0.7f;
+	            }
+	            System.out.println("O valor do produto é: "+ valor);
+	            break;
+	        case 2:
+	            valor = valor*0.8f;
+	            System.out.println("O valor do produto é: "+ valor);
+	            break;
+	        case 3:
+	            if (valor>100){
+	                valor = valor*0.9f;
+	            }else {
+	                valor = valor*0.95f;
+	            }
+	            System.out.println("O valor do produto é: "+ valor);
+	            break;
+	        default:
+	            System.out.println("Desconto invalido");
+	            break;
+	            
+	    }
+	}
+}
