@@ -1,0 +1,46 @@
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+	    Scanner scan = new Scanner(System.in);
+	/*	System.out.println("Digite o numero: ");
+		int x = scan.nextInt();
+		
+		while (x>=0){
+		    System.out.println(x);
+		    x--;
+		}*/
+		int op;
+		do{
+		System.out.printf("\n\t\tMENU: ");
+		System.out.printf("\n\t1-Adicionar");
+		System.out.printf("\n\t2-Subtrair");
+		System.out.printf("\n\t3-Multiplicar");
+		System.out.printf("\n\t4-Dividir");
+		System.out.printf("\n\t0-Sair\n");
+		
+		op = scan.nextInt();
+		
+		switch(op){
+		    case 1:
+		      System.out.printf("\nAdicionando...");
+		    break;
+		    case 2:
+		        System.out.printf("\nSubtraindo...");
+		    break;
+		    case 3:
+		        System.out.printf("\nMultiplicando...");
+		    break;
+		    case 4:
+		        System.out.printf("\nDividindo...");
+		    break;
+		    case 0:
+		        System.out.printf("\nsair...");
+		    break;
+		    default:
+		         System.out.printf("\nOpção invalida...");
+		    break;
+    	}
+	}while(op!=0);
+	}
+}
